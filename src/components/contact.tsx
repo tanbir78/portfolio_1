@@ -69,7 +69,7 @@ export function Contact() {
             } relative overflow-hidden rounded-2xl`}
           >
             <a
-              href={href}
+              href={href ?? undefined}
               {...(
                 key === "email"
                   ? {}

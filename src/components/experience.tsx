@@ -26,6 +26,7 @@ export function Experience() {
           .flatMap((item) =>
             item.roles.map((role) => ({
               ...role,
+              kind: item.kind,
               organization: item.organization,
               place: item.place,
               key: `${item.organization}-${role.title}`,
